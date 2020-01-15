@@ -1,0 +1,263 @@
+﻿/*Layout CSS Start*/
+body {
+    font-family: Source Sans Pro;
+}
+h2
+{
+    margin:15px 0px;
+    font-weight:600;
+}
+h3{
+    font-size:14px;
+}
+.wrapper
+{
+    padding:0 25%;
+    overflow:hidden;
+}
+.col-9
+{
+    width:73%;
+    float:left;
+    margin-right:2%;
+}
+.col-3
+{
+    width:25%;
+    float:left;
+}
+/*Layout CSS End*/
+/*Helpers CSS Start*/
+.clearfix::after
+{
+    visibility:hidden;
+    display:block;
+    font-size:0px;
+    content:"";
+    clear:both;
+    height:0;
+}
+.bg-blue
+{
+    background-color:#0084bf
+}
+.color-white
+{
+    color:white;
+}
+/*Helpers CSS End*/
+
+/*Navigation CSS Start*/
+#NavTop
+{
+    background:#283e49;
+    border-top:none;
+    box-shadow:none;
+    height:52px;
+    padding:0 25%;
+    overflow:hidden;
+}
+#NavbarLeft
+{
+   float:left;
+}
+#NavbarRight
+{
+  float:right;
+}
+
+ul#NavbarLeft li img
+{
+    width:34px;
+    height:34px ;
+}
+ul#NavbarLeft,ul#NavbarRight
+{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    display:inline-block;
+    vertical-align:middle;
+    max-height:52px;
+}
+ul#NavbarLeft li,ul#NavbarRight li
+{
+    float:left;
+    box-sizing:border-box;
+    position:relative;
+}
+ul#NavbarLeft li 
+{
+    margin-top:8px;
+}
+ul#NavbarLeft li a
+{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    position:relative;
+}
+ul#NavbarRight li a
+{
+    display:block;
+    text-align:center;
+    color:#fff;
+    padding:7px;
+    text-decoration:none;
+    position:relative;
+}
+ul#NavbarLeft li input
+{
+    border:none;
+    height:34px;
+    padding:0 0 0 25px;
+    margin-left:15px;
+}
+ul#NavbarLeft li  i.fa-search
+{
+    position:relative;
+    color:#283e4a;
+    left:38px;
+}
+ul#NavbarRight li span.notification
+{
+    position: absolute;
+    height: 14px;
+    min-width: 14px;
+    background-color: red;
+    border-radius: 14px;
+    font-size: 13px;
+    font-family: Source Sans Pro;
+}
+ul#NavbarRight li a img.profile-img
+{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+}
+ul#NavbarRight li.profile
+{
+    border-right:1px solid #ccc;
+    padding-right:15px;
+}
+ul#NavbarRight li.work
+{
+    padding-left:15px;
+}
+
+ul#NavbarRight li.premium
+{
+    max-width:130px;
+}
+ul#NavbarRight li.premium a p
+{
+    color:#dccea4;
+}
+ul#NavbarRight li.premium a p:hover 
+{
+    text-decoration:underline;
+}
+/*Navigation CSS End*/
+
+/*Content CSS Start*/
+.main-content {
+    margin-top: 50px;
+}
+
+.profile-head {
+    border: 1px solid #ccc;
+    padding-bottom: 15px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+}
+
+.profile-tab .profile-bg, .profile-add .profile-bg {
+    background: url(https://static.licdn.com/sc/h/3chad3rzxalsf65nuo7hxciac);
+    height: 198px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.profile-tab {
+    text-align: center;
+}
+
+    .profile-tab .profile-detail {
+        position: relative;
+    }
+
+        .profile-tab .profile-detail .profile-edit {
+            position: absolute;
+            right: 15px;
+            color: #283e4a !important;
+            top: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: all .5s ease;
+            cursor: pointer;
+        }
+
+            .profile-tab .profile-detail .profile-edit i {
+                font-size: 24px;
+                margin-top: 5px;
+            }
+
+            .profile-tab .profile-detail .profile-edit:hover, .profile-tab .profile-detail .profile-more:hover {
+                background-color: #dccea4;
+            }
+
+        .profile-tab .profile-detail .profile-more {
+            position: absolute;
+            right: 92px;
+            color: #283e4a !important;
+            top: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: all .5s ease;
+            cursor: pointer;
+        }
+
+            .profile-tab .profile-detail .profile-more i {
+                margin-top: 5px;
+            }
+
+        .profile-tab .profile-detail .profile-img-circle {
+            display: inline-block;
+            margin-top: -80px;
+        }
+
+            .profile-tab .profile-detail .profile-img-circle img {
+                display: inline-block;
+                width: 150px;
+                border-radius: 50%;
+                border: 6px solid #ffffff;
+            }
+
+    .profile-tab .profile-info {
+        font-family: Source Sans Pro;
+        line-height: 32px;
+    }
+
+        .profile-tab .profile-info p:first-child {
+            font-size: 24px;
+        }
+
+.profile-add .profile-links .link {
+    padding: 15px;
+    font-family: Source Sans Pro;
+    line-height: 32px;
+}
+.profile-add .profile-links .link span:last-child ,.profile-add .profile-links .link i {
+    float: right;
+    margin-top: 8px;
+}
+.profile-add .ads {
+    height: 262px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+}
+
+
+/*Content CSS End*/
